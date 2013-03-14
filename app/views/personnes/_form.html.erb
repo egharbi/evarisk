@@ -1,0 +1,57 @@
+<%= form_for(@personne) do |f| %>
+  <% if @personne.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@personne.errors.count, "error") %> prohibited this personne from being saved:</h2>
+
+      <ul>
+      <% @personne.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :prenom %><br />
+    <%= f.text_field :prenom %>
+  </div>
+  <div class="field">
+    <%= f.label :tel %><br />
+    <%= f.text_field :tel %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :nouveau %><br />
+    <%= f.check_box :nouveau %>
+  </div>
+  <div class="field">
+    <%= f.label :sst %><br />
+    <%= f.check_box :sst %>
+  </div>
+  <div class="field">
+    <%= f.label :charge_evac %><br />
+    <%= f.check_box :charge_evac %>
+  </div>
+  <div class="field">
+    <%= f.label :f_extinc %><br />
+    <%= f.check_box :f_extinc %>
+  </div>
+  <div class="field">
+    <%= f.label :suivi_med_cons %><br />
+    <%= f.number_field :suivi_med_cons %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

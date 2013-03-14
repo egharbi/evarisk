@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  nom: MyString
+  prenom: MyString
+  tel: MyString
+  email: MyString
+  nouveau: false
+  sst: false
+  charge_evac: false
+  f_extinc: false
+  suivi_med_cons: 1
+
+two:
+  id: 1
+  nom: MyString
+  prenom: MyString
+  tel: MyString
+  email: MyString
+  nouveau: false
+  sst: false
+  charge_evac: false
+  f_extinc: false
+  suivi_med_cons: 1

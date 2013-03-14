@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  id_etab: 1
+  id_compo: 1
+  nom: MyString
+  code: MyString
+  activite: MyString
+  id_directeur: MyString
+
+two:
+  id: 1
+  id_etab: 1
+  id_compo: 1
+  nom: MyString
+  code: MyString
+  activite: MyString
+  id_directeur: MyString

@@ -1,0 +1,45 @@
+<%= form_for(@unite) do |f| %>
+  <% if @unite.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@unite.errors.count, "error") %> prohibited this unite from being saved:</h2>
+
+      <ul>
+      <% @unite.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :id_etab %><br />
+    <%= f.number_field :id_etab %>
+  </div>
+  <div class="field">
+    <%= f.label :id_compo %><br />
+    <%= f.number_field :id_compo %>
+  </div>
+  <div class="field">
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :activite %><br />
+    <%= f.text_field :activite %>
+  </div>
+  <div class="field">
+    <%= f.label :id_directeur %><br />
+    <%= f.text_field :id_directeur %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

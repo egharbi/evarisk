@@ -1,4 +1,10 @@
 Evarisk::Application.routes.draw do
+  resources :personnes
+
+
+  resources :unites
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

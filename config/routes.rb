@@ -1,8 +1,9 @@
 Evarisk::Application.routes.draw do
+  devise_for :users
+
   resources :personnes
-
-
   resources :unites
+  root :to => 'personnes#index'
 
 
   # The priority is based upon order of creation:
@@ -62,3 +63,4 @@ Evarisk::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+

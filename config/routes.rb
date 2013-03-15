@@ -1,7 +1,12 @@
 Evarisk::Application.routes.draw do
+  devise_for :users
+
+  resources :composantes
+
+
   resources :personnes
   resources :unites
-  root :to => 'personnes#index'
+  root :to => 'unites#index'
 
 
   # The priority is based upon order of creation:

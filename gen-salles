@@ -1,0 +1,2 @@
+rails generate scaffold salles id:integer description:string surface:integer
+

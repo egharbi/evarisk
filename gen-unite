@@ -1,0 +1,2 @@
+rails generate scaffold unites id:integer nom:string code:string activite:string
+

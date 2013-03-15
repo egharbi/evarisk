@@ -1,0 +1,2 @@
+rails generates scaffold personnes  id:integer nom :string prenom:string tel :string email:string statut:string nouveau:boolean sst:boolean chargé_evac:boolean f_extinc:boolean  suivi_med_cons:integer
+

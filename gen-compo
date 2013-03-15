@@ -1,0 +1,2 @@
+rails generate scaffold  composantes id:integer code:string libelle:string
+

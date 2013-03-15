@@ -1,6 +1,4 @@
 Evarisk::Application.routes.draw do
-  devise_for :users
-
   resources :personnes
   resources :unites
   root :to => 'personnes#index'

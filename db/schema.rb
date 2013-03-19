@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130315155048) do
+ActiveRecord::Schema.define(:version => 20130319101852) do
 
   create_table "composantes", :force => true do |t|
     t.string   "code"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20130315155048) do
   create_table "personnes", :force => true do |t|
     t.string   "nom"
     t.string   "prenom"
+    t.string   "statut"
     t.string   "tel"
     t.string   "email"
     t.boolean  "nouveau"
@@ -32,23 +33,15 @@ ActiveRecord::Schema.define(:version => 20130315155048) do
     t.integer  "suivi_med_cons"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
-    t.integer  "statut_id"
-    t.integer  "unite_id"
   end
 
-  add_index "personnes", ["statut_id"], :name => "index_personnes_on_statut_id"
-  add_index "personnes", ["unite_id"], :name => "index_personnes_on_unite_id"
-
   create_table "unites", :force => true do |t|
-    t.integer  "id_etab"
-    t.integer  "id_compo"
     t.string   "nom"
     t.string   "code"
     t.string   "activite"
-    t.string   "id_directeur"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
     t.integer  "compo_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   add_index "unites", ["compo_id"], :name => "index_unites_on_compo_id"

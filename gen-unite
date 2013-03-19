@@ -1,2 +1,2 @@
-rails generate scaffold unites id:integer nom:string code:string activite:string
+rails generate scaffold unites id:integer nom:string code:string activite:string compo_id:integer
 

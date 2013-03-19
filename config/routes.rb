@@ -1,8 +1,14 @@
 Evarisk::Application.routes.draw do
-  devise_for :users
+  resources :personnes
+
+
+  resources :unites
+
 
   resources :composantes
 
+
+  devise_for :users
 
   resources :personnes
   resources :unites

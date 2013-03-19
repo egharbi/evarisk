@@ -6,16 +6,6 @@
 </p>
 
 <p>
-  <b>Id etab:</b>
-  <%= @unite.id_etab %>
-</p>
-
-<p>
-  <b>Id compo:</b>
-  <%= @unite.id_compo %>
-</p>
-
-<p>
   <b>Nom:</b>
   <%= @unite.nom %>
 </p>
@@ -31,10 +21,15 @@
 </p>
 
 <p>
-  <b>Id directeur:</b>
-  <%= @unite.id_directeur %>
+  <b>code Compo:</b>
+  <%= @unite.compo_id %>
+</p>
+<p>
+  <b>Libelle Compo :</b>
+<%= @unite.composante.libelle %>
 </p>
 
 
 <%= link_to 'Edit', edit_unite_path(@unite) %> |
 <%= link_to 'Back', unites_path %>
+

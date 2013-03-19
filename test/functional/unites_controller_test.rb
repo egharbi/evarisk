@@ -18,7 +18,7 @@ class UnitesControllerTest < ActionController::TestCase
 
   test "should create unite" do
     assert_difference('Unite.count') do
-      post :create, unite: { activite: @unite.activite, code: @unite.code, id: @unite.id, id_compo: @unite.id_compo, id_directeur: @unite.id_directeur, id_etab: @unite.id_etab, nom: @unite.nom }
+      post :create, unite: { activite: @unite.activite, code: @unite.code, compo_id: @unite.compo_id, id: @unite.id, nom: @unite.nom }
     end
 
     assert_redirected_to unite_path(assigns(:unite))
@@ -35,7 +35,7 @@ class UnitesControllerTest < ActionController::TestCase
   end
 
   test "should update unite" do
-    put :update, id: @unite, unite: { activite: @unite.activite, code: @unite.code, id: @unite.id, id_compo: @unite.id_compo, id_directeur: @unite.id_directeur, id_etab: @unite.id_etab, nom: @unite.nom }
+    put :update, id: @unite, unite: { activite: @unite.activite, code: @unite.code, compo_id: @unite.compo_id, id: @unite.id, nom: @unite.nom }
     assert_redirected_to unite_path(assigns(:unite))
   end
 

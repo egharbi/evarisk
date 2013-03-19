@@ -2,18 +2,14 @@
 
 one:
   id: 1
-  id_etab: 1
-  id_compo: 1
   nom: MyString
   code: MyString
   activite: MyString
-  id_directeur: MyString
+  compo_id: 1
 
 two:
   id: 1
-  id_etab: 1
-  id_compo: 1
   nom: MyString
   code: MyString
   activite: MyString
-  id_directeur: MyString
+  compo_id: 1

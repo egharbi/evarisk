@@ -18,7 +18,7 @@ class PersonnesControllerTest < ActionController::TestCase
 
   test "should create personne" do
     assert_difference('Personne.count') do
-      post :create, personne: { charge_evac: @personne.charge_evac, email: @personne.email, f_extinc: @personne.f_extinc, id: @personne.id, nom: @personne.nom, nouveau: @personne.nouveau, prenom: @personne.prenom, sst: @personne.sst, suivi_med_cons: @personne.suivi_med_cons, tel: @personne.tel }
+      post :create, personne: { charge_evac: @personne.charge_evac, email: @personne.email, f_extinc: @personne.f_extinc, id: @personne.id, nom: @personne.nom, nouveau: @personne.nouveau, prenom: @personne.prenom, sst: @personne.sst, statut: @personne.statut, suivi_med_cons: @personne.suivi_med_cons, tel: @personne.tel }
     end
 
     assert_redirected_to personne_path(assigns(:personne))
@@ -35,7 +35,7 @@ class PersonnesControllerTest < ActionController::TestCase
   end
 
   test "should update personne" do
-    put :update, id: @personne, personne: { charge_evac: @personne.charge_evac, email: @personne.email, f_extinc: @personne.f_extinc, id: @personne.id, nom: @personne.nom, nouveau: @personne.nouveau, prenom: @personne.prenom, sst: @personne.sst, suivi_med_cons: @personne.suivi_med_cons, tel: @personne.tel }
+    put :update, id: @personne, personne: { charge_evac: @personne.charge_evac, email: @personne.email, f_extinc: @personne.f_extinc, id: @personne.id, nom: @personne.nom, nouveau: @personne.nouveau, prenom: @personne.prenom, sst: @personne.sst, statut: @personne.statut, suivi_med_cons: @personne.suivi_med_cons, tel: @personne.tel }
     assert_redirected_to personne_path(assigns(:personne))
   end
 

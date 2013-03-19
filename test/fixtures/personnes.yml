@@ -4,6 +4,7 @@ one:
   id: 1
   nom: MyString
   prenom: MyString
+  statut: MyString
   tel: MyString
   email: MyString
   nouveau: false
@@ -16,6 +17,7 @@ two:
   id: 1
   nom: MyString
   prenom: MyString
+  statut: MyString
   tel: MyString
   email: MyString
   nouveau: false

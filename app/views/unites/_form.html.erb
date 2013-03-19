@@ -16,14 +16,6 @@
     <%= f.number_field :id %>
   </div>
   <div class="field">
-    <%= f.label :id_etab %><br />
-    <%= f.number_field :id_etab %>
-  </div>
-  <div class="field">
-    <%= f.label :id_compo %><br />
-    <%= f.number_field :id_compo %>
-  </div>
-  <div class="field">
     <%= f.label :nom %><br />
     <%= f.text_field :nom %>
   </div>
@@ -36,8 +28,8 @@
     <%= f.text_field :activite %>
   </div>
   <div class="field">
-    <%= f.label :id_directeur %><br />
-    <%= f.text_field :id_directeur %>
+    <%= f.label :compo_id %><br />
+    <%= f.number_field :compo_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

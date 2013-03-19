@@ -3,12 +3,10 @@
 <table>
   <tr>
     <th>Id</th>
-    <th>Id etab</th>
-    <th>Id compo</th>
     <th>Nom</th>
     <th>Code</th>
     <th>Activite</th>
-    <th>Id directeur</th>
+    <th>Compo</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,12 +15,11 @@
 <% @unites.each do |unite| %>
   <tr>
     <td><%= unite.id %></td>
-    <td><%= unite.id_etab %></td>
-    <td><%= unite.id_compo %></td>
     <td><%= unite.nom %></td>
     <td><%= unite.code %></td>
     <td><%= unite.activite %></td>
-    <td><%= unite.id_directeur %></td>
+    <td><%= unite.composante.libelle %></td>
+
     <td><%= link_to 'Show', unite %></td>
     <td><%= link_to 'Edit', edit_unite_path(unite) %></td>
     <td><%= link_to 'Destroy', unite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -33,3 +30,4 @@
 <br />
 
 <%= link_to 'New Unite', new_unite_path %>
+

@@ -7,10 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+
  <p class="notice"><%= notice %></p>
  <p class="alert"><%= alert %></p>
 
-<%= yield %>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="#" class = brand> Université de Franche-Comté </a>
+        <ul class="nav">
+          <li><%=link_to "All compos",composantes_path %></li>
+          <li><%=link_to "All personnes",personnes_path %></li>
+          <li><%=link_to "All unites",unites_path %></li></ul>
+     </div>
+  </div>
+</div>
+<div class="container">
+      <%= yield %>
+</div>
+
 
 </body>
 </html>

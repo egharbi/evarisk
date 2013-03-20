@@ -1,3 +1,21 @@
 // Place all the styles related to the composantes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.composante {
+    border-bottom: solid    #CCC;
+    padding:    5px 0;
+    }
+
+.composante p {
+    marging:    4px 0;
+    }
+
+.composante .admin {
+    display: none;
+    }
+
+.composante.hover .admin {
+    display: inline;
+    }
+

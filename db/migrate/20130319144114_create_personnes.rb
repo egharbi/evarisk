@@ -4,6 +4,7 @@ class CreatePersonnes < ActiveRecord::Migration
       t.integer :id
       t.string :nom
       t.string :prenom
+      t.string :statut
       t.string :tel
       t.string :email
       t.boolean :nouveau
@@ -11,6 +12,7 @@ class CreatePersonnes < ActiveRecord::Migration
       t.boolean :charge_evac
       t.boolean :f_extinc
       t.integer :suivi_med_cons
+      t.integer :unite_id
 
       t.timestamps
     end

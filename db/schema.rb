@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130319101852) do
+ActiveRecord::Schema.define(:version => 20130319143521) do
 
   create_table "composantes", :force => true do |t|
     t.string   "code"
@@ -31,9 +31,12 @@ ActiveRecord::Schema.define(:version => 20130319101852) do
     t.boolean  "charge_evac"
     t.boolean  "f_extinc"
     t.integer  "suivi_med_cons"
+    t.integer  "unite_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
+
+  add_index "personnes", ["unite_id"], :name => "index_personnes_on_unite_id"
 
   create_table "unites", :force => true do |t|
     t.string   "nom"

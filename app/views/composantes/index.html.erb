@@ -1,28 +1,28 @@
-<h1>Listing composantes</h1>
+<div class="page-header">
+  <h1>Liste des composantes</h1>
+</div>
 
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Code</th>
-    <th>Libelle</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @composantes.each do |composante| %>
-  <tr>
-    <td><%= composante.id %></td>
-    <td><%= composante.code %></td>
-    <td><%= composante.libelle %></td>
-    <td><%= link_to 'Show', composante %></td>
-    <td><%= link_to 'Edit', edit_composante_path(composante) %></td>
-    <td><%= link_to 'Destroy', composante, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <div class="composante">
+    <strong><%= composante.id %></strong>
+    <p>
+    <strong><%= composante.code %></strong>
+    <strong><%= composante.libelle %></strong>
+    </p>
+    <div class="meta">
+      <%= link_to composante.created_at,composante %> |
+      <span class="admin">
+        <%= link_to 'Edit', edit_composante_path(composante) %> |
+        <%= link_to 'Destroy', composante, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </span>
+    </div>
+  </div>
+
 <% end %>
-</table>
+
 
 <br />
 
-<%= link_to 'New Composante', new_composante_path %>
+<%= link_to 'Nouvelle Composante', new_composante_path, class:"btn btn-success" %>
 

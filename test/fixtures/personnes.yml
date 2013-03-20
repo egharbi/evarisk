@@ -12,6 +12,7 @@ one:
   charge_evac: false
   f_extinc: false
   suivi_med_cons: 1
+  unite_id: 1
 
 two:
   id: 1
@@ -25,3 +26,4 @@ two:
   charge_evac: false
   f_extinc: false
   suivi_med_cons: 1
+  unite_id: 1

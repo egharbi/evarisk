@@ -55,6 +55,17 @@
   <%= @personne.suivi_med_cons %>
 </p>
 
+<p>
+  <b>Unite:</b>
+  <%= @personne.unite_id %>
+</p>
+
+<p>
+  <b>Unite libelle:</b>
+  <%= @personne.unite.nom %>
+</p>
+
 
 <%= link_to 'Edit', edit_personne_path(@personne) %> |
 <%= link_to 'Back', personnes_path %>
+

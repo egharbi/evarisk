@@ -290,6 +290,7 @@ a:focus {
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
+
 }
 
 .span12 {
@@ -6156,3 +6157,4 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+

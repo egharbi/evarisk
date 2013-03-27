@@ -1,6 +1,7 @@
 class UnitesController < ApplicationController
   # GET /unites
   # GET /unites.json
+  before_filter :authenticate_user!
   def index
     @unites = Unite.all
 
@@ -81,3 +82,4 @@ class UnitesController < ApplicationController
     end
   end
 end
+

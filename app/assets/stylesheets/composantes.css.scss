@@ -10,7 +10,9 @@
 .composante p {
     marging:    4px 0;
     }
-
+.composante.hover {
+    background: #F0F0F0;
+    }
 .composante .admin {
     display: none;
     }

@@ -9,6 +9,7 @@ gem 'mysql2'
 gem 'execjs'
 gem 'therubyracer'
 gem 'devise'
+gem "validates_existence", ">= 0.4"
 
 
 # Gems used only for assets and not required

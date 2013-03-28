@@ -1,6 +1,7 @@
 class ComposantesController < ApplicationController
   # GET /composantes
   # GET /composantes.json
+
   def index
     @composantes = Composante.all
 
@@ -81,3 +82,4 @@ class ComposantesController < ApplicationController
     end
   end
 end
+

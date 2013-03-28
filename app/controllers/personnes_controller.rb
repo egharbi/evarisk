@@ -1,6 +1,7 @@
 class PersonnesController < ApplicationController
   # GET /personnes
   # GET /personnes.json
+
   def index
     @personnes = Personne.all
 
@@ -81,3 +82,4 @@ class PersonnesController < ApplicationController
     end
   end
 end
+

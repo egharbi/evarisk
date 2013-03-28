@@ -1,7 +1,10 @@
 class UnitesController < ApplicationController
   # GET /unites
   # GET /unites.json
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :only => [:new, :create, :destroy, :edit]
+  #  before_filter :authenticate_user!
+
+
   def index
     @unites = Unite.all
 
